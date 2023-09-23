@@ -3,3 +3,5 @@ https://necolas.github.io/normalize.css/8.0.1/normalize.css
 
 site para formaçao de slides interativos:
  http://kenwheeler.github.io/slick/
+
+ Parei na quinta aula por falta de estrutura bora atras da estrutura js
