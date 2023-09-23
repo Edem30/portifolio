@@ -1,0 +1,5 @@
+css basico para zerar pré configurações
+https://necolas.github.io/normalize.css/8.0.1/normalize.css
+
+site para formaçao de slides interativos:
+ http://kenwheeler.github.io/slick/
