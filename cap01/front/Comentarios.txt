@@ -5,3 +5,7 @@ site para formaçao de slides interativos:
  http://kenwheeler.github.io/slick/
 
  Parei na quinta aula por falta de estrutura bora atras da estrutura js
+
+
+ site para anexo de icones na pagina
+ https://ionic.io/ionicons/usage
