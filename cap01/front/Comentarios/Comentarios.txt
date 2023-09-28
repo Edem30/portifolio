@@ -1,7 +1,7 @@
 css basico para zerar pré configurações
 https://necolas.github.io/normalize.css/8.0.1/normalize.css
 
-site para formaçao de slides interativos:
+site para formaçao de slides interativos js: 
  http://kenwheeler.github.io/slick/
 
  Parei na quinta aula por falta de estrutura bora atras da estrutura js
@@ -9,3 +9,6 @@ site para formaçao de slides interativos:
 
  site para anexo de icones na pagina
  https://ionic.io/ionicons/usage
+
+ Guia completo de flexbox
+ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
