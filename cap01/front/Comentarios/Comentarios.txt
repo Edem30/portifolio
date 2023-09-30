@@ -12,3 +12,16 @@ site para formaçao de slides interativos js:
 
  Guia completo de flexbox
  https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+
+ site de fonts
+ dafont.com.br
+
+ sites para desenvolvimento do front-end
+ https://www.frontendmentor.io/      ----projetos de frontend com acompanhamento
+https://100dayscss.com/   -----desafio css 100dias
+https://javascript30.com/   -----Maratonar js 30 dias js vanila
+https://codepen.io/challenges   --- desafios em html, css e JS formaçao de portifolio
+https://www.codewell.cc/   ----- projetos reais html, css e JS formaçao de portifolio
+https://devchallenges.io/   ----desenvolvimento de sites em grupo mais doque front-end portifolio exepicional 
+https://cssbattle.dev/   ---codar em css com o minimo de linhas possivel
