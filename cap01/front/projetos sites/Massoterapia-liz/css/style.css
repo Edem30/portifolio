@@ -1,0 +1,31 @@
+body {
+    width: 1200px;
+}
+
+img {
+    width: 1200px;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 10vw;
+}
+
+.cabecalho-menu ul {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    padding-top: 1vh;
+}
+
+.cabecalho-menu ul li {
+    padding: 1vw;
+}
+
+.cabecalho-menu ul li a {
+    text-decoration: none;
+}
