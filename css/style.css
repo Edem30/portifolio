@@ -1,0 +1,515 @@
+            @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Open+Sans:wght@300;400;500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Sarala:wght@400;700&display=swap');
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'Poppins', sans-serif;
+            }
+            
+            html {
+                scroll-behavior: smooth;
+            }
+            
+            ul li {
+                list-style: none;
+            }
+            
+            h1,
+            h2,
+            h3,
+            h4,
+            p {
+                color: white;
+            }
+            
+            h1 {
+                font-size: xx-large;
+            }
+            
+            body {
+                align-items: center;
+                justify-content: center;
+                background-color: black;
+                height: 100vh;
+                transition: 1s;
+            }
+            
+            .interface {
+                padding-left: 3%;
+                padding-top: 3%;
+                padding-right: 3%;
+                align-items: center;
+                max-width: 1280px;
+                margin: 0 auto;
+            }
+            
+            .btn-contato button:hover,
+            form .btn-enviar input:hover {
+                box-shadow: 0px 0px 8px #55daff;
+            }
+            
+            strong {
+                font-size: large;
+            }
+            
+            .link {
+                color: #54FFC6;
+            }
+            
+            .padding-menu {
+                padding-top: 10%;
+            }
+            /*menu-mobile*/
+            
+            body.menu-aberto {
+                overflow: hidden;
+            }
+            
+            .btn-abrir-menu i {
+                font-size: 45px;
+                position: fixed;
+                z-index: 101;
+                top: 2%;
+                color: #54ffc600;
+                left: 82%;
+            }
+            
+            .btn-abrir-menu.bi-list {
+                padding-left: 10%;
+            }
+            
+            .menu-mobile {
+                background-color: rgba(0, 0, 0, 0.377);
+                height: 100v;
+                position: fixed;
+                top: 0;
+                right: 0;
+                z-index: 100;
+                width: 0%;
+                text-align: right;
+                overflow: hidden;
+                transition: 0.5s;
+                height: 100%;
+            }
+            
+            .menu-mobile.abrir-menu {
+                width: 70%;
+            }
+            
+            .menu-mobile nav ul li {
+                text-align: right;
+            }
+            
+            .menu-mobile nav ul li a {
+                color: white;
+                font-size: 20px;
+                font-weight: 300;
+                padding: 20px 4%;
+            }
+            
+            .menu-mobile nav ul li:hover {
+                background-color: #54FFC6;
+                color: black;
+            }
+            
+            .btn-fechar {
+                padding: 20px 5%;
+                text-align: start;
+            }
+            
+            .btn-fechar i {
+                font-size: 20px;
+                padding: 20px 5%;
+            }
+            /*.overlay-menu {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}*/
+            /*  ESTILO DO CABEÇALHO */
+            
+            header {
+                width: 100%;
+                padding: 0 4%;
+            }
+            
+            header a {
+                display: inline-block;
+                color: #7d7d7d;
+                text-decoration: none;
+            }
+            
+            header a:hover {
+                transition: 0.2s;
+                color: rgb(216, 216, 216);
+                transform: scale(1.5);
+            }
+            
+            header>.interface {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            
+            .logo img {
+                padding-top: 24.2px;
+                width: 121px;
+            }
+            
+            .menu-desktop ul {
+                font-size: large;
+                align-items: center;
+                justify-content: space-between;
+                list-style-type: none;
+            }
+            
+            .menu-desktop ul li {
+                display: inline-block;
+                padding: 0 24.2px;
+            }
+            
+            header .btn-contato button {
+                padding: 10px 40px;
+                font-size: 18px;
+                font-weight: 600;
+                background-color: #55daff;
+                border: 0;
+                border-radius: 30px;
+                cursor: pointer;
+            }
+            /*topo do site */
+            
+            .menu-desktop-fixed {
+                position: fixed;
+                width: 100vw;
+                background-color: #000000;
+                z-index: 101;
+                max-height: 125px;
+                padding: 3px;
+                margin: 0 auto;
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+                justify-content: space-around;
+                flex-wrap: nowrap;
+            }
+            
+            main .btn-contato button {
+                padding: 10px 40px;
+                font-size: 14px;
+                font-weight: 600;
+                background-color: #55daff;
+                border: 0;
+                border-radius: 30px;
+                cursor: pointer;
+                transition: .2s;
+            }
+            
+            main .btn-contato button:hover {
+                box-shadow: 0px 0px 8px #55daff;
+            }
+            
+            .TopodoSite {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            .TopodoSite-apresentacao {
+                margin-top: 200px;
+                padding-left: 3%;
+                padding-right: 3%;
+                align-items: center;
+                margin: 0 auto;
+            }
+            
+            .apres00 {
+                padding-right: 200px;
+                padding-left: 50px;
+            }
+            
+            .ft-main {
+                padding-right: 30;
+                position: relative;
+                animation: flutuar 2s ease-in-out infinite alternate;
+                padding: 200px 30.25px;
+            }
+            
+            .pt2 {
+                padding-top: 2vh;
+            }
+            
+            @keyframes flutuar {
+                0% {
+                    top: 0
+                }
+                100% {
+                    top: 30px
+                }
+            }
+            
+            span {
+                color: #55daff
+            }
+            
+            .Msaite {
+                padding-top: 181.5px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+            }
+            
+            .skill-bars {
+                padding-bottom: 24.2px;
+                padding-top: 150px;
+                display: flex;
+                align-items: flex-start;
+                justify-content: space-around;
+            }
+            
+            .card {
+                max-width: 25%;
+                padding: 15px;
+            }
+            
+            .card:hover {
+                border-radius: 15%;
+                box-shadow: 0px 0px 30px #ffffff;
+                transition: 2s;
+            }
+            
+            .especialidades {
+                font-size: x-large;
+            }
+            
+            .bi-code-square {
+                padding-left: 18.15px;
+                font-size: 90.75px;
+                color: #55daff;
+            }
+            
+            .sobre {
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+            }
+            
+            .apres {
+                max-width: 50%;
+                padding: 30.25px;
+                font-size: larger;
+            }
+            
+            .bi {
+                font-weight: bolder;
+                padding-left: 18.15px;
+                font-size: 36.3px;
+                color: #54FFC6;
+            }
+            
+            .apres ul {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            .flex {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            .titulo {
+                display: flex;
+                flex-direction: center;
+                justify-content: center;
+                padding-bottom: 90.75px;
+                padding-top: 90.75px;
+            }
+            
+            .meu-portifolio {
+                display: flex;
+                flex-direction: center;
+                justify-content: center;
+                padding-bottom: 40px;
+                padding-top: 90.75px;
+            }
+            
+            meu .portifolio {
+                box-shadow: 0 0 40px 10px #ffffff25;
+            }
+            
+            .portifolio .flex {
+                display: flex;
+                justify-content: space-around;
+            }
+            
+            .img-port {
+                width: 302.5PX;
+                height: 423.5px;
+                background-color: #54FFC6;
+                background-size: cover;
+                background-position: 100% 0;
+
+                transition: 8s;
+
+                transition: 4s;
+
+                cursor: pointer;
+                border-radius: 40px;
+                position: relative;
+            }
+            
+            .img-port:hover {
+                background-position: 100% 100%;
+            }
+            
+            .pover {
+                display: inline-block;
+                color: #55daff;
+                background-color: #0000006a;
+                text-align: center;
+                width: 302px;
+                height: 423.5px;
+                padding-top: 10px;
+
+            }
+            
+            .overlay {
+                background-color: rgba(0, 0, 0, 0.752y);
+            }
+            
+            .overlay:hover {
+                position: absolute;
+                opacity: 0;
+            }
+            
+            .pover:hover {
+                opacity: 0;
+            }
+            
+            section .formulario {
+                padding: 80px 4%;
+            }
+            
+            form {
+                max-width: 453.75px;
+                margin: 0 auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            form input,
+            form textarea {
+                width: 100%;
+                background-color: rgba(92, 91, 91, 0.548);
+                outline: 0px;
+                padding: 20px 15px;
+                border-radius: 15px;
+                color: white;
+                font-size: medium;
+            }
+            
+            form input::placeholder {}
+            
+            .textarea {
+                resize: none;
+                max-height: 200px;
+            }
+            
+            form .btn-enviar {
+                margin-top: 30.25px;
+            }
+            
+            form .btn-enviar input {
+                width: 120px;
+                text-align: center;
+                background-color: #55daff;
+                color: black;
+                font-weight: 700;
+                cursor: poiter;
+                transition: .2s;
+            }
+            
+            footer {
+                padding-top: 18.15px;
+            }
+            
+            .formulario {
+                padding-bottom: 90.75px;
+            }
+            
+            .footer1,
+            .footer1 ul {
+                display: flex;
+            }
+            
+            .footer1 ul {
+                padding-bottom: 18.15px;
+            }
+            
+            .footer1 {
+                justify-content: space-around;
+                align-items: last baseline;
+                border-bottom: solid 4px #55daff;
+            }
+            
+            a {
+                text-decoration: none;
+                color: white;
+            }
+            
+            @media screen and ( max-width:1220px) {
+                /*config geral*/
+                .flex {
+                    flex-direction: column;
+                }
+                h1 {
+                    font-size: large;
+                }
+                /*cabecalho*/
+                .menu-desktop,
+                .btn-contato,
+                .ft-main {
+                    display: none;
+                }
+                .btn-abrir-menu i {
+                    color: #54ffc6;
+                }
+                section .TopodoSite {
+                    display: flex;
+                    flex-direction: column;
+                }
+                /*meio do saite*/
+                .card {
+                    max-width: 80%;
+                    padding: 25px;
+                }
+                .sobre {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    align-items: center;
+                }
+                .apres00 {
+                    max-width: 90%;
+                    padding: 35px;
+                    font-size: larger;
+                }
+                .overlay,
+                .img-port {
+                    margin-top: 30px;
+                    margin-bottom: 30px;
+                }
+                .apres {
+                    max-width: 90%;
+                    font-size: small;
+                }
+            }
