@@ -5,123 +5,257 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edem30</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Open+Sans:wght@300;400;500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Sarala:wght@400;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <!--bootstrap-->
+    <script src="js/menu.js" defer></script>
 </head>
-
 <body>
     <header>
-        <div>
-            <h1 class="logo">Edem30</h1>
-        </div>
-        <div>
-            <ul class="menu">
-                <li>Home </li>
-                <li>Sobre mim!</li>
-                <li>Projetos </li>
-                <li>contatos </li>
-            </ul>
+        <div class="menu-desktop-fixed ">
+            <div class="logo">
+                <a href="#">
+                    <img src="img/Edem30.png" alt="Logo Edem30">
+                </a>
 
-        </div>
-    </header>
-    <main>
-        <div>
-            <h3>Sobre</h3>
-            <h1>Mais sobre mim </h1>
-            <p>“Inovação e performance, criando soluções digitais que fazem a diferença</p>
-        </div>
-        <div class="desc">
-            <div class="Hello">
-                <p>My name is Sidney TA Junior, I am a developer passionate about technology. With skills in Front End, Mobile and Python, I bring a difference when offering innovative and high-performance solutions. With extensive experience in development
-                    tools such as React, Bootstrap, PyQt, Tkinter, tailwindcss and JavaScript, I have expertise in creating modern and responsive interfaces, developing desktop applications with intuitive graphical interfaces, performing data analysis
-                    with Python and building applications multiplataform. My commitment goes beyond development, offering differentiated support and personalized service to my clients. I invite you to explore my portfolio and discover my projects in my
-                    repository on GitHub.</p>
+
             </div>
-            <div class="technologies">
-                <ul class="skill-bars">
+            <!--Logo-->
+            <nav class="menu-desktop">
+                <ul>
                     <li>
-                        <div class="progress percent90"></div>
-                        <strong>Python_</strong>
+                        <a href="#inicio">Inicio  </a>
+
                     </li>
                     <li>
-                        <div class="progress percent85"></div>
-                        <strong>JavaScript_</strong>
+                        <a href="#especialidades">Especialidades   </a>
+
                     </li>
                     <li>
-                        <div class="progress percent75"></div>
-                        <strong>react_</strong>
+                        <a href="#sobre">Sobre
                     </li>
                     <li>
-                        <div class="progress percent79"></div>
-                        <strong>Bootstrap_</strong>
+                        <a href="#projetos">Projetos </a>
+
                     </li>
-                    <li>
-                        <div class="progress percent77"></div>
-                        <strong>Tailwind CSS_</strong>
-                    </li>
+
+
+
+
                 </ul>
+            </nav>
+            <!--menu-desktop-->
+            <div class="btn-contato">
+                <a href="#contatos"><button>Contato</button></a>
             </div>
-            <div class="RecentWorks">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti vero nostrum modi adipisci nihil neque impedit consequuntur. Suscipit quis tenetur sunt adipisci commodi eum. Nobis veniam voluptate reiciendis incidunt corporis!</p>
-
+            <!--menu-mobile-->
+            <div class="btn-abrir-menu" id="btn-abrir-menu"><i class="bi bi-list"></i>
 
             </div>
-            <div class="port">
-                <h3>Portifolio</h3>
-                <h1>“Inovação em código, soluções que cativam"</h1>
-                <p>De aplicativos web multiplataforma a aplicativos móveis impressionantes, cada projeto é uma jornada onde transformo ideias em realidade. Venha descobrir como posso impulsionar o sucesso do seu próximo projeto.</p>
-                <div class="cards">
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar">
+                    <i class="bi bi-x-lg"></i>
+                </div>
+                <nav class="">
                     <ul>
                         <li>
-                            <p>projeto 1</p>
+                            <a href="#inicio">Inicio  </a>
+
                         </li>
                         <li>
-                            <p>projeto 2</p>
+                            <a href="#especialidades">Especialidades   </a>
+
                         </li>
                         <li>
-                            <p>projeto 3</p>
+                            <a href="#sobre">Sobre
                         </li>
                         <li>
-                            <p>projeto 4</p>
+                            <a href="#projetos">Projetos </a>
+
                         </li>
                         <li>
-                            <p>projeto 1</p>
+                            <a href="#contatos">Contato</a>
                         </li>
-                        <li>
-                            <p>projeto 1</p>
-                        </li>
-                        <li>
-                            <p>projeto 1</p>
-                        </li>
-                        <li>
-                            <p>projeto 1</p>
-                        </li>
-                        <li>
-                            <p>projeto 1</p>
-                        </li>
-                        <li>
-                            <p>projeto 1</p>
-                        </li>
+
+
+
+
                     </ul>
+                </nav>
+            </div>
+            <div class="overlay-menu" id="overlay-menu"></div>
+
+        </div>
+        <!--Interface-->
+
+    </header>
+    <main>
+        <section class="TopodoSite interface " id="inicio">
+            <section class="TopodoSite-apresentacao ">
+                <h1 class="pt2 apres00">Transformando ideias em Realidade</h1>
+                <p class="pt2 apres00">Meu nome é <strong>Eduardo Lemos Guinho</strong> , sou um desenvolvedor apaixonado por tecnologia. Com habilidades em Front End, trago o diferencial ao oferecer soluções inovadoras e de alta performance. Com experiência em ferramentas
+                    de desenvolvimento como React, Bootstrap, tailwindcss e JavaScript. Convido você a explorar meu portfólio e descobrir meus projetos em meu repositório no GitHub. Juntos, podemos transformar suas ideias em realidade.</p>
+                <div class="btn-contato pt2  apres00">
+                    <a href="#"><button>Entre em contato Contato</button></a>
+                </div>
+
+            </section>
+            <section class="ft-main"> <img src="img/Edem30.png" alt="Eduardo Lemos "></section>
+        </section>
+        <!--TopodoSite-->
+        <section class="Msaite interface">
+            <div class="especialidades padding-menu" id="especialidades">
+                <h1>Minhas <span>Especialidades.</span>
+                </h1>
+            </div>
+            <div class="skill-bars pt2 flex " id="especialidades">
+                <div class=" card"><i class="bi bi-code-square"></i>
+                    <h2>HTML & CSS</h2>
+                    <p><strong> HTML</strong>: linguagem de marcação utilizada para estruturar os elementos da página, como parágrafos, links, títulos, tabelas, imagens e até vídeos. <br><strong>CSS</strong>: linguagem de estilos utilizada para definir cores,
+                        fontes, tamanhos, posicionamento e qualquer outro valor estético para os elementos da página.</p>
+
+                </div>
+                <div class=" card"><i class="bi bi-code-square"></i>
+                    <h2>JavaScript</h2>
+                    <p><strong>JavaScript </strong>é uma linguagem de programação, leve, interpretada, orientada a objetos, baseada em protótipos e em first-class functions (funções de primeira classe), mais conhecida como a linguagem de script da internet</p>
+
+                </div>
+                <div class=" card"><i class="bi bi-code-square"></i>
+                    <h2>React</h2>
+                    <p>O <strong>React.js</strong> é uma biblioteca de código aberto para interfaces gráficas (GUI) que tem como foco uma só coisa: tornar a experiência do usuário com a interface mais eficiente.</p>
 
                 </div>
 
+
+            </div>
+            <!--
+            <div class="skill-bars pt2">
+                <div class=" card"><i class="bi bi-code-square"></i>
+                    <h2>Tailwind</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam excepturi dolor sed distinctio quam, reprehenderit sunt ipsum hic quis esse eius eveniet libero, dicta numquam labore magnam consectetur, atque ex.</p>
+
+                </div>
+                <div class=" card"><i class="bi bi-code-square"></i>
+                    <h2>TypeScrip</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam excepturi dolor sed distinctio quam, reprehenderit sunt ipsum hic quis esse eius eveniet libero, dicta numquam labore magnam consectetur, atque ex.</p>
+
+                </div>
+                <div class=" card"><i class="bi bi-code-square"></i>
+                    <h2>node.js</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam excepturi dolor sed distinctio quam, reprehenderit sunt ipsum hic quis esse eius eveniet libero, dicta numquam labore magnam consectetur, atque ex.</p>
+
+                </div>
+
+
+            </div>
+            -->
+        </section>
+        <!--Msaite-->
+        <section class="sobre interface padding-menu" id="sobre">
+            <img src="img/Edem30.png" alt="Eduardo Lemos ">
+            <div class="apres">
+                <h1>muito prazer,<br><span>sou Eduardo lemos.</span></h1>
+                <p> Formando-se em desenvolvimento Front-end mas almenjando o desenvolvimento full-stack, através do JS e TypeScri.
+                </p>
+                <p>Atualmente exerço a função de lider Analista de infraestrutura no maior atacadista do Brasil "Atacadao ltda" busco incerçao no setor de desevolvimento web. Acesse meu <strong class=" link">linkedin</strong>,<strong class="link"> GitHub</strong>                    para ver parte dos meus projetos e meu dia-a-dia ou me chame pelo
+                    <strong class="link">whatsapp</strong> atraves dos links abaixo.</p>
+                <ul>
+                    <li>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </li>
+
+                    <li>
+                        <a href="#"><i class="bi bi-github"></i></a>
+                    </li>
+
+                    <li>
+                        <a href="#"><i class="bi bi-whatsapp"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!--sobre-->
+        <section class="portifolio " id="projetos">
+            <div class="interface ">
+                <h1 class="meu-portifolio">Meu <span>Portifólio.</span></h1>
+                <div class="flex">
+                    <a href="#">
+                        <div class="img-port" style=" background-image: url(img/ecommerceacesoiosdeprataoriginal.png);">
+                            <div class="overlay">
+                                <p class="pover">Uma aplicação web desenvolvida em <strong>HTML </strong>e <strong>CSS</strong>, com intuito de trazer a retenção de clientes de forma rápida e pratica, com desaine minimalista e cores neutras focados para o mercado de joias.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="img-port" style=" background-image: url(img/em-Desenvolvimento.png);">
+                            <div class="overlay">
+                                <p class="pover">Em desenvolvimento
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="img-port" style=" background-image: url(img/em-Desenvolvimento.png);">
+                            <div class="overlay">
+                                <p class="pover">Em desenvolvimento
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+
+
+                </div>
+                <br><br><br>
+            </div>
+        </section>
+        <!--Portifolios-->
+        <section class="formulario" id="contatos">
+            <div class="interface">
+                <h1 class="titulo">Fale<span>Comigo.</span></h1>
+                <form action="">
+                    <input type="text" name="" id="" placeholder="Nome:" required>
+                    <input type="text" name="" id="" placeholder="Seu E-mail:" required>
+                    <input type="text" name="" id="" placeholder="Seu Celular:">
+                    <textarea name="" id="mensagem" placeholder="Sua mensagem" required></textarea>
+                    <div class="btn-enviar"><input type="submit" value="Enviar"></div>
+
+                </form>
+
+            </div>
+        </section>
+
+    </main>
+    <footer class="portifolio ">
+        <div class="interface">
+            <div class="footer1" id="contatos">
+                <div class="logo">
+                    <a href="#"><img src="img/Edem30.png" alt="Eduardo Lemos "></a>
+                </div>
+                <ul>
+                    <li>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="bi bi-github"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="bi bi-whatsapp"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="email">
+                <a href="#"><i class="bi bi-envelope-at-fill"></i>       edem30lemos@gmail.com</a>
             </div>
         </div>
-    </main>
-    <footer>
-        <div class="logoEdem30">
-            <h1>Edem30</h1>
-        </div>
-        <div>
-            <ul>
-                <li><a href="https://www.facebook.com">Facebook</a></li>
-                <li><a href="https://www.instagram.com">Instagram</a></li>
-                <li><a href="https://www.github.com">GitHub</a></li>
-                <li><a href="https://www.linkedin.com">LinkedIn</a></li>
-            </ul>
-        </div>
     </footer>
+
+
 </body>
 
 </html>
