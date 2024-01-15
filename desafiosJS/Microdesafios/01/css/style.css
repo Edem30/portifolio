@@ -1,0 +1,21 @@
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+main{
+    width: 200px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+button{width: 80px;
+height: 20px;}
