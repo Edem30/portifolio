@@ -70,16 +70,20 @@
                 position: fixed;
                 z-index: 101;
                 top: 2%;
-                color: #54ffc600;
+              color: #54ffc6;
                 left: 82%;
             }
+            .bi-list::after {
+                color: #000000;
+            }
+
             
             .btn-abrir-menu.bi-list {
                 padding-left: 10%;
             }
             
             .menu-mobile {
-                background-color: rgba(0, 0, 0, 0.377);
+                background-color: rgba(0, 0, 0, 0.658);
                 height: 100v;
                 position: fixed;
                 top: 0;
@@ -104,12 +108,17 @@
                 color: white;
                 font-size: 20px;
                 font-weight: 300;
-                padding: 20px 4%;
+                padding: 20px 10%;
             }
             
             .menu-mobile nav ul li:hover {
-                background-color: #54FFC6;
+                background-color: #54ffc6e5;
+             
+            }
+            .menu-mobile nav ul li  a:hover {
                 color: black;
+                font-weight: bolder;
+               font-size: 1.2rem;
             }
             
             .btn-fechar {
@@ -145,7 +154,7 @@
             header a:hover {
                 transition: 0.2s;
                 color: rgb(216, 216, 216);
-                transform: scale(1.5);
+                transform: scale(1.2);
             }
             
             header>.interface {
@@ -273,7 +282,18 @@
             
             .card {
                 max-width: 25%;
+                height: 420px;
                 padding: 15px;
+               
+            }
+          
+            .card h2{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding-top:1rem ;
+                padding-bottom: 1rem;
+
             }
             
             .card:hover {
@@ -309,6 +329,10 @@
                 padding-left: 18.15px;
                 font-size: 36.3px;
                 color: #54FFC6;
+            }
+            .bi-x-lg::before {
+                content: "\f659";
+                font-size: xx-large;
             }
             
             .apres ul {
@@ -368,7 +392,7 @@
             .pover {
                 display: inline-block;
                 color: #55daff;
-                background-color: #0000006a;
+                background-color: #000000c6;
                 text-align: center;
                 width: 302px;
                 height: 423.5px;
@@ -476,9 +500,8 @@
                 .ft-main {
                     display: none;
                 }
-                .btn-abrir-menu i {
-                    color: #54ffc6;
-                }
+                
+              
                 section .TopodoSite {
                     display: flex;
                     flex-direction: column;
