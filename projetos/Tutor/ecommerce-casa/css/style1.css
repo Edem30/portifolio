@@ -1,0 +1,164 @@
+    /*FONT IMPORTING*/
+    
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+    /*RESETING CSS RULES    */
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        outline: none;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+     :root {
+        --destaque:#E82D25;
+        --complemento:#E74E25;
+        --neutro: #E87125;
+        --black:#000
+
+        ;
+    }
+    
+    html,
+    body {
+        width: 100%;
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+        /*retirar a barra de rolagem da pagina no eixo X*/
+    }
+    
+    body {
+        align-items: center;
+        justify-content: center;
+        transition: 2s;
+        background: var(--neutro);
+    }
+    
+    a {
+        text-decoration: none;
+    } 
+    
+    .t100 {
+        min-height: 100vh;
+    }
+    .center{max-width: 1000px;}
+    header{width: 90;}
+    .content{
+        max-width: 1000px;
+        min-width: 300px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: center;
+
+    }
+
+
+
+.paralax {
+    background: #ffffff87;
+     background-image: url('../img/Mobilha/capa.jpg');
+     height: 100vh;
+     width: 100%;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: 1;
+}
+.content-brand {
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--complemento);
+}
+.content-brand p{font-size:4rem;
+color: black;
+}
+
+.brand {
+}
+.header-block {
+    width: 50%;
+    height: 50vh;
+    padding: 15px;
+
+
+}
+.text {display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+justify-content: space-around;
+width: 70%;
+height: 50vh;
+font-size: 50px;
+color: var(--destaque);
+}
+.catalog {
+    
+}
+.title-wrapper-catalog {
+}
+.filter-card {
+}
+.search-input {
+}
+.search-button {
+}
+.cards-wrapper {
+}
+.card-item {
+}
+.card-content {
+}
+.about {
+}
+.title-wrapper-about {
+}
+.about-content {
+}
+.left {
+}
+.right {
+}
+.features {
+}
+.title-wrapper-features {
+}
+.feature-card-block {
+}
+.feature-card-item {
+}
+.bi {
+}
+.bi-globe-americas {
+}
+.feature-text-content {
+}
+.main {
+}
+.footer-links {
+}
+.footer-company {
+}
+.footer-rental {
+}
+.footer-social {
+}
+.social-icons {
+}
+.bi-instagram {
+}
+.bi-facebook {
+}
+.footer-contact {
+}
+.lest {
+}

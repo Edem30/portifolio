@@ -70,7 +70,7 @@
                 position: fixed;
                 z-index: 101;
                 top: 2%;
-              color: #54ffc6;
+              color: #54ffc600;
                 left: 82%;
             }
             .bi-list::after {
@@ -363,7 +363,7 @@
                 padding-top: 90.75px;
             }
             
-            meu .portifolio {
+               .portifolio {
                 box-shadow: 0 0 40px 10px #ffffff25;
             }
             
@@ -531,4 +531,10 @@
                     max-width: 90%;
                     font-size: small;
                 }
+
+            .btn-abrir-menu i {
+                
+              color: #54ffc6;
+               
+            }
             }

@@ -12,16 +12,23 @@
     }
     
      :root {
-        --verde: #458C8C;
-        --blue: #99BFBF;
-        --gray: #F2F2F2;
+        --destaque:#E82D25;
+        --complemento:#E74E25;
+        --neutro:#414141;
+        --black:#000;
+        --gray:rgb(72, 72, 72);
+
     }
+    p,h1,h2,h3{color: white;
+    font-size: X-large;
+}
     
     html,
     body {
         width: 100%;
         overflow-x: hidden;
         scroll-behavior: smooth;
+       
         /*retirar a barra de rolagem da pagina no eixo X*/
     }
     
@@ -29,11 +36,13 @@
         align-items: center;
         justify-content: center;
         transition: 2s;
+        
+     
     }
     
     a {
         text-decoration: none;
-    }
+    } 
     
     .t100 {
         min-height: 100vh;
@@ -44,7 +53,20 @@
         width: 100%;
         height: 500px;
         background: var(--blue);
+        background-image:url(img/Mobilha/capa.jpg);
+        background-color:#cccccc;
     }
+    .paralax {
+    background: #ffffff87;
+     background-image: url('../img/Mobilha/capa.jpeg');
+     height: 100vh;
+     width: 100%;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: 1;
+}
     
     .content {
         max-width: 1000px;
@@ -72,11 +94,20 @@
     }
     
     .content-brand {
-        background: #458C8C;
+     
         height: 50px;
         display: flex;
         align-items: center;
         flex-direction: center;
+      
+    }
+    .content-brand p {
+        background-color: #00000009;
+        border-radius:15px;
+        padding: 5px;
+        margin-top: 100px;
+        color: #6D0AD6;
+        font-size: 4rem;
     }
     
     .nav {
@@ -89,7 +120,7 @@
     }
     
     .brand {
-        font-size: 24px;
+        font-size: 20px;
         color: var(--blue);
         cursor: pointer;
     }
@@ -148,6 +179,7 @@
         z-index: 10;
         padding: 10px;
         width: 100%;
+       
     }
     
     .header-block img {
@@ -165,17 +197,27 @@
     }
     
     .header-block .text h2 {
-        color: white;
-        margin-bottom: 20px;
+        font-weight: 900;
+        color:#EC7E06;
+        margin-bottom: 0px;
         text-align: right;
+        font-size: 3rem;
         transform: translateX(-20px);
         transition: transform 5ms;
+       background-color: #00000045;
+       border-radius: 15px 15px 0 0            ;
+       padding: 5px;
     }
     
     .header-block .text p {
-        max-width: 280px;
-        color: white;
+        background-color: #00000045;
+        border-radius:  0 0 15px 15px;
+        padding: 5px;
+        font-weight: 900;
+ 
+        color:#EC7E06;
         text-align: right;
+        font-size: 2.2rem;
         transform: translateX(-20px);
         transition: transform 4ms;
     }
@@ -245,35 +287,30 @@
         align-items: center;
         justify-content: space-around;
     }
-    /* .card-item {
-        height: 400px;
-        background: var(--gray);
-        border-radius: 8px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-    }
-    
-    */
+   
+
     
     .card-item {
-        height: 400px;
-        background: var(--gray);
+
+        max-height: 30rem;
+        background: var(--neutro);
         border-radius: 8px;
         display: flex;
         flex-direction: column;
         flex-direction: column;
         justify-content: space-between;
+        color: white;
+      
     }
     
     .card-item img {
         max-width: 100%;
-        max-height: 70%;
+        height: 30vh;
         border-radius: 8px 8px 0px 0px;
     }
     
     .card-item h4 {
+        color: white;
         width: 90%;
     }
     
@@ -284,7 +321,7 @@
     }
     
     .card-item button {
-        width: 90%;
+        width: 70%;
         padding: 15px 0;
         border: none;
         background: var(--blue);
@@ -294,12 +331,12 @@
         font-size: 1.1em;
         cursor: pointer;
         transition: 0.3s ease;
-        margin-bottom: 10px;
+        margin-bottom: 15px;
     }
     
     .card-item button:hover {
-        background: var(--gray);
-        color: var(--blue);
+        background: white;
+        color: black;
     }
     /*About*/
     
@@ -418,9 +455,10 @@
     /*Footer*/
     
     footer {
+        margin-top: 50px;
         width: 100%;
         height: 170px;
-        background: #458C8C;
+        background: #490097;
     }
     
     footer .main {
